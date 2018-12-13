@@ -1,0 +1,12 @@
+object GameGUIFrame: TGameGUIFrame
+  Height = 240.000000000000000000
+  Width = 320.000000000000000000
+  TabOrder = 0
+  object OpenCloseAnimation: TFloatAnimation
+    Duration = 0.200000002980232200
+    OnFinish = OpenCloseAnimationFinish
+    PropertyName = 'Opacity'
+    StartValue = 0.000000000000000000
+    StopValue = 1.000000000000000000
+  end
+end
