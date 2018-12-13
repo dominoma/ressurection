@@ -1,0 +1,49 @@
+inherited EndScreenFrame: TEndScreenFrame
+  TabOrder = 0
+  inherited Background: TBackground
+    OpenFlowList = <
+      item
+        Name = 'Ende'
+        FlowList.ItemClasses = (
+          'TSleepFlowItem')
+        FlowList.Items = <
+          item
+            OnStopped = GameEnded
+            Sleep = 3000
+          end>
+      end>
+    object Text1: TText
+      Align = Center
+      Height = 176.000000000000000000
+      Text = 'Ende.'
+      TextSettings.Font.Family = 'Comic Sans MS'
+      TextSettings.Font.Size = 72.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claWhite
+      Width = 304.000000000000000000
+      object Text2: TText
+        Align = Bottom
+        Height = 50.000000000000000000
+        Position.Y = 126.000000000000000000
+        Text = 'Danke f'#252'r'#39's Spielen!'
+        TextSettings.Font.Family = 'Comic Sans MS'
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        Width = 304.000000000000000000
+      end
+    end
+    object Text3: TText
+      AutoSize = True
+      Height = 16.722656250000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 295.000000000000000000
+      Text = 
+        'Ein Spiel von Kjell Sonnenberg, Sebastian Hagen, Heiko Hoffmann ' +
+        'und Dominik Sander (2017)'
+      TextSettings.Font.Family = 'Comic Sans MS'
+      TextSettings.FontColor = claWhite
+      Width = 526.263671875000000000
+    end
+  end
+end

@@ -1,0 +1,26 @@
+object GameFrame: TGameFrame
+  Align = Client
+  Height = 400.000000000000000000
+  Width = 782.000000000000000000
+  TabOrder = 0
+  object BGRect: TRectangle
+    Align = Client
+    Fill.Color = claBlack
+    Locked = True
+    Height = 400.000000000000000000
+    Stroke.Thickness = 0.000000000000000000
+    Width = 782.000000000000000000
+  end
+  object Background: TBackground
+    FixedSide = Height
+    OriginalWidth = 782.000000000000000000
+    OriginalHeight = 400.000000000000000000
+    Width = 782.000000000000000000
+    Height = 400.000000000000000000
+    CanFocus = False
+    OpenFlowList = <>
+    BeforeOpenFlowList = <>
+    BackgroundTrack = 'bg1.mp3'
+    BGTrackVolume = 0.800000011920929000
+  end
+end

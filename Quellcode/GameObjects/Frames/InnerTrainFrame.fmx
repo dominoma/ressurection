@@ -1,0 +1,414 @@
+inherited InnerTrainFrame: TInnerTrainFrame
+  Height = 393.000000000000000000
+  inherited BGRect: TRectangle
+    Height = 393.000000000000000000
+  end
+  inherited Background: TBackground
+    OriginalWidth = 698.666687011718800000
+    OriginalHeight = 393.000000000000000000
+    Width = 698.666687011718800000
+    Height = 393.000000000000000000
+    BackgroundFile = 'Train inneres.png'
+    object Rohr: THotspot
+      FixedSide = Height
+      OriginalWidth = 80.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 80.000000000000000000
+      Height = 50.000000000000000000
+      Left = 192.000000000000000000
+      Top = 78.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Okay, hier fehlt offenbar ein ganzes Rohr.'
+                end>
+              Person = Player
+            end>
+        end
+        item
+          Name = 'Voll'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 
+                    'Soo, das Rohr h'#228'tten wir an Position. Aber es ist noch nicht fes' +
+                    't.'
+                end>
+              Person = Player
+            end>
+        end
+        item
+          Name = 'Fixiert'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'So, das Rohr ist fest!'
+                end>
+              Person = Player
+            end>
+        end>
+      States.Selected = 'Leer'
+      States = <
+        item
+          Name = 'Voll'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Rohr
+              Picture = 'Fehlendes Rohr.png'
+            end>
+        end
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Rohr
+            end>
+        end
+        item
+          Name = 'Fixiert'
+          FlowList.OnStarted = ObjectStateChanged
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end>
+      ItemDropEvents = <
+        item
+          ItemName = 'Rohr'
+          HotspotState = 'Leer'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeLocalStateFlowItem'
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Hoffentlich passt das Rohr.'
+                end>
+              Person = Player
+            end
+            item
+              State = 'Voll'
+              Object = Rohr
+            end
+            item
+              ConvParts = <
+                item
+                  Caption = 'Super, es passt! Aber ich muss es noch fixieren.'
+                end>
+              Person = Player
+            end>
+          DeleteItem = True
+        end
+        item
+          ItemName = 'Rohrzange'
+          HotspotState = 'Voll'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeLocalStateFlowItem')
+          FlowList.Items = <
+            item
+              OnStarted = RohrRepaired
+              ConvParts = <
+                item
+                  Caption = 'Damit k'#246'nnte ich das Rohr festschrauben.'
+                end
+                item
+                  Caption = 'Super, hat geklappt!'
+                end>
+              Person = Player
+            end
+            item
+              State = 'Fixiert'
+              Object = Rohr
+            end>
+        end>
+      CaptColor = 255
+    end
+    object Kohle: THotspot
+      FixedSide = Height
+      OriginalWidth = 94.642852783203130000
+      OriginalHeight = 150.000000000000000000
+      Width = 94.642852783203130000
+      Height = 150.000000000000000000
+      Left = 256.000000000000000000
+      Top = 232.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Okay, hier fehlt schonmal die Kohle.'
+                end>
+              Person = Player
+            end>
+        end
+        item
+          Name = 'Voll'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Das mit der Kohle w'#228're geschafft.'
+                end>
+              Person = Player
+            end>
+        end>
+      States.Selected = 'Leer'
+      States = <
+        item
+          Name = 'Voll'
+          FlowList.OnStarted = ObjectStateChanged
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Kohle
+              Picture = 'Fehlende Kohle.png'
+            end>
+        end
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Kohle
+            end>
+        end>
+      ItemDropEvents = <
+        item
+          ItemName = 'Kohlehaufen'
+          HotspotState = 'Leer'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeLocalStateFlowItem'
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              OnStarted = CoalFilled
+              ConvParts = <
+                item
+                  Caption = 'Endlich werde ich die Kohle los. Die wiegt mehr als man denkt.'
+                end>
+              Person = Player
+            end
+            item
+              State = 'Voll'
+              Object = Kohle
+            end
+            item
+              ConvParts = <
+                item
+                  Caption = 'Au'#223'erdem ht die Lok jetzt Kohle.'
+                end>
+              Person = Player
+            end>
+          DeleteItem = True
+        end>
+      CaptColor = 255
+    end
+    object Wasser: THotspot
+      FixedSide = Height
+      OriginalWidth = 14.210144996643070000
+      OriginalHeight = 53.000000000000000000
+      Width = 14.210144996643070000
+      Height = 53.000000000000000000
+      Left = 124.000000000000000000
+      Top = 91.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Leer. Ohne Wasser l'#228'uft die Lok aber nicht.'
+                end>
+              Person = Player
+            end>
+        end
+        item
+          Name = 'Voll'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Soo, das Wasser h'#228'tten wir.'
+                end>
+              Person = Player
+            end>
+        end>
+      States.Selected = 'Leer'
+      States = <
+        item
+          Name = 'Voll'
+          FlowList.OnStarted = ObjectStateChanged
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Wasser
+              Picture = 'Fehlendes Wasser.png'
+            end>
+        end
+        item
+          Name = 'Leer'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Wasser
+            end>
+        end>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+    object Exit: TExit
+      FixedSide = Height
+      OriginalWidth = 281.000000000000000000
+      OriginalHeight = 58.000000000000000000
+      Width = 281.000000000000000000
+      Height = 58.000000000000000000
+      Left = 400.000000000000000000
+      Top = 328.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'ZuTun'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Da muss noch was getan werden, bevor der Zug wieder l'#228'uft.'
+                end>
+              Person = Player
+            end
+            item
+              Location = 'TTrainFrame'
+            end>
+        end
+        item
+          Name = 'Erledigt'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Soo, das war alles. Der Zug m'#252'sste jetzt wieder laufen!'
+                end>
+              Person = Player
+            end
+            item
+              Location = 'TTrainFrame'
+            end>
+        end>
+      States.Selected = 'ZuTun'
+      States = <
+        item
+          Name = 'ZuTun'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end
+        item
+          Name = 'Erledigt'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+    object Player: TForegroundObj
+      OriginalWidth = 50.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      Left = 336.000000000000000000
+      Top = 64.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 790.000000000000000000
+      CaptColor = 16711680
+    end
+  end
+end

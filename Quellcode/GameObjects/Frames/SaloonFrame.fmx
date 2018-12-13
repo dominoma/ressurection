@@ -1,0 +1,2028 @@
+﻿inherited SaloonFrame: TSaloonFrame
+  Height = 460.000000000000000000
+  Width = 1030.000000000000000000
+  TabOrder = 0
+  inherited BGRect: TRectangle
+    Height = 460.000000000000000000
+    Width = 1030.000000000000000000
+  end
+  inherited Background: TBackground
+    OriginalWidth = 920.324645996093800000
+    OriginalHeight = 460.000000000000000000
+    Width = 920.324645996093800000
+    Height = 460.000000000000000000
+    BackgroundFile = 'Saloon Leer  mit Farbe.png'
+    OnFrameClosed = BackgroundFrameClosed
+    object Barmann: TPerson
+      FixedSide = Height
+      OriginalWidth = 74.128440856933590000
+      OriginalHeight = 80.000000000000000000
+      Width = 74.128440856933590000
+      Height = 80.000000000000000000
+      Left = 384.000000000000000000
+      Top = 120.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {3C544F776E656450726F70657274795365742F3E0D0A}
+      Animations.Selected = 'Idle'
+      Animations = <
+        item
+          Name = 'Idle'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Barmann
+              Animation = 'Wischen'
+              FPS = 1.500000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D224261726D616E6E222F3E3C706C3A5450726F70657274
+            79204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F
+            7065727479204E616D653D225374796C654E616D65222056616C75653D22222F
+            3E3C706C3A54436C61737350726F7065727479204E616D653D22546F75636822
+            3E3C706C3A545265666572656E636550726F7065727479204E616D653D224765
+            73747572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F
+            7065727479204E616D653D22496E746572616374697665476573747572657322
+            2056616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C
+            706C3A544D6574686F6450726F7065727479204E616D653D224F6E4765737475
+            7265222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D65
+            3D225265736F7572636550617468222056616C75653D22433A5C55736572735C
+            446F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C5374
+            7564696F5C50726F6A656B74655C416476656E747572655C57696E33325C4465
+            6275675C5265736F75726365735C506572736F6E735C4261726D61222F3E3C70
+            6C3A5450726F7065727479204E616D653D22466978656453696465222056616C
+            75653D22486569676874222F3E3C706C3A5450726F7065727479204E616D653D
+            224F726967696E616C5769647468222056616C75653D223530222F3E3C706C3A
+            5450726F7065727479204E616D653D224F726967696E616C4865696768742220
+            56616C75653D223734222F3E3C706C3A5450726F7065727479204E616D653D22
+            5769647468222056616C75653D223530222F3E3C706C3A5450726F7065727479
+            204E616D653D22486569676874222056616C75653D223734222F3E3C706C3A54
+            50726F7065727479204E616D653D224C656674222056616C75653D2233383422
+            2F3E3C706C3A5450726F7065727479204E616D653D22546F70222056616C7565
+            3D22313230222F3E3C706C3A54436C61737350726F7065727479204E616D653D
+            2250616464696E67223E3C706C3A5450726F7065727479204E616D653D224C65
+            6674222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D
+            653D22546F70222056616C75653D2230222F3E3C706C3A5450726F7065727479
+            204E616D653D225269676874222056616C75653D2230222F3E3C706C3A545072
+            6F7065727479204E616D653D22426F74746F6D222056616C75653D2230222F3E
+            3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F70657274
+            79204E616D653D224F706163697479222056616C75653D2231222F3E3C706C3A
+            5450726F7065727479204E616D653D22526F746174696F6E416E676C65222056
+            616C75653D2230222F3E3C706C3A54436C61737350726F7065727479204E616D
+            653D22526F746174696F6E43656E746572223E3C706C3A5450726F7065727479
+            204E616D653D2258222056616C75653D22302C35222F3E3C706C3A5450726F70
+            65727479204E616D653D2259222056616C75653D22302C35222F3E3C2F706C3A
+            54436C61737350726F70657274793E3C706C3A5450726F7065727479204E616D
+            653D2256697369626C65222056616C75653D2274727565222F3E3C706C3A5443
+            6C61737350726F7065727479204E616D653D22416E696D6174696F6E73223E3C
+            706C3A54436C61737350726F7065727479204E616D653D22536176656450726F
+            70657274696573222F3E3C706C3A5450726F7065727479204E616D653D225365
+            6C6563746564222056616C75653D22222F3E3C2F706C3A54436C61737350726F
+            70657274793E3C706C3A54436C61737350726F7065727479204E616D653D224C
+            6F6164466C6F77223E3C706C3A544D6574686F6450726F7065727479204E616D
+            653D224F6E53746172746564222056616C75653D22222F3E3C706C3A544D6574
+            686F6450726F7065727479204E616D653D224F6E53746F70706564222056616C
+            75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D
+            224F6E506175736564222056616C75653D22222F3E3C706C3A544D6574686F64
+            50726F7065727479204E616D653D224F6E46696E6973686564222056616C7565
+            3D22222F3E3C706C3A5450726F7065727479204E616D653D2252657065617422
+            2056616C75653D2266616C7365222F3E3C2F706C3A54436C61737350726F7065
+            7274793E3C706C3A5450726F7065727479204E616D653D22416E696D6174696F
+            6E222056616C75653D22222F3E3C706C3A54436C61737350726F706572747920
+            4E616D653D22416E696D6174696F6E536176656450726F70657274696573222F
+            3E3C706C3A5450726F7065727479204E616D653D22546578744F666673657458
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22546578744F666673657459222056616C75653D2230222F3E3C706C3A545072
+            6F7065727479204E616D653D2243617074696F6E436F6C6F72222056616C7565
+            3D22323535222F3E3C706C3A54436C61737350726F7065727479204E616D653D
+            22496E7370656374466C6F7773222F3E3C706C3A54436C61737350726F706572
+            7479204E616D653D22416374696F6E466C6F7773222F3E3C706C3A54436C6173
+            7350726F7065727479204E616D653D22537461746573223E3C706C3A5450726F
+            7065727479204E616D653D2253656C6563746564222056616C75653D22222F3E
+            3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F70657274
+            79204E616D653D225374617465222056616C75653D22222F3E3C706C3A54436C
+            61737350726F7065727479204E616D653D224974656D44726F704576656E7473
+            222F3E3C706C3A5450726F7065727479204E616D653D22506C617965724F6666
+            736574222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D22506C61796572466163696E67222056616C75653D224C656674222F3E
+            3C706C3A5450726F7065727479204E616D653D22506C61796572416E696D6174
+            696F6E222056616C75653D22222F3E3C706C3A544D6574686F6450726F706572
+            7479204E616D653D224F6E496E7370656374222056616C75653D22222F3E3C70
+            6C3A544D6574686F6450726F7065727479204E616D653D224F6E416374696F6E
+            222056616C75653D22222F3E3C706C3A544D6574686F6450726F706572747920
+            4E616D653D224F6E4974656D44726F70222056616C75653D22222F3E3C706C3A
+            54436C61737350726F7065727479204E616D653D22436F6E7654726565222F3E
+            3C2F706C3A50726F70657274794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'FirstMet'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TOpenConvFlowItem'
+            'TChangeLocalStateFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'bm1.mp3'
+                  Caption = 
+                    'Nanu, dich hab ich hier ja noch nie gesehen. Setz dich doch und ' +
+                    'trink was.'
+                end>
+              Person = Barmann
+              Dialog = 'Barmann'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'hp1.mp3'
+                  Caption = 
+                    'Nene, ich stehe lieber und trinken m'#246'chte ich auch nichts, danke' +
+                    '.'
+                end>
+              Person = Player
+              IdleAnimation = 'Hinten'
+              TalkAnimation = 'Hinten'
+              Dialog = 'Barmann'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'bm2.mp3'
+                  Caption = 'Ja, warum bist du dann in einem Saloon?'
+                end>
+              Person = Barmann
+              Dialog = 'Barmann'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'hp2.mp3'
+                  Caption = 
+                    'Du bist ja hier der Barmann, also kennst du dich doch ein bissch' +
+                    'en mit der Stadt und den Leuten hier aus, stimmt'#8216' s?'
+                end>
+              Person = Player
+              IdleAnimation = 'Hinten'
+              TalkAnimation = 'Hinten'
+              Dialog = 'Barmann'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'bm3.mp3'
+                  Caption = 
+                    'Na klar, ich hab hier schon Leute bedient, die hatten Geschichte' +
+                    'n zu erz'#228'hlen, von denen du nicht mal tr'#228'umen k'#246'nntest.'
+                end>
+              Person = Barmann
+              Dialog = 'Barmann'
+            end
+            item
+              Object = Barmann
+            end
+            item
+              State = 'NextMet'
+              Object = Barmann
+            end>
+        end
+        item
+          Name = 'NextMet'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TOpenConvFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'hp2.mp3'
+                  Caption = 
+                    'Du bist ja hier der Barmann, also kennst du dich doch ein bissch' +
+                    'en mit der Stadt und den Leuten hier aus, stimmt'#8216' s?'
+                end>
+              Person = Player
+              IdleAnimation = 'Hinten'
+              TalkAnimation = 'Hinten'
+              Dialog = 'Barmann'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'bm3.mp3'
+                  Caption = 
+                    'Na klar, ich hab hier schon Leute bedient, die hatten Geschichte' +
+                    'n zu erz'#228'hlen, von denen du nicht mal tr'#228'umen k'#246'nntest.'
+                end>
+              Person = Barmann
+              Dialog = 'Barmann'
+            end
+            item
+              Object = Barmann
+            end>
+        end>
+      States.Selected = 'FirstMet'
+      States = <
+        item
+          Name = 'FirstMet'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end
+        item
+          Name = 'NextMet'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end>
+      ItemDropEvents = <>
+      PlayerOffset = 30.000000000000000000
+      PlayerAnimation = 'Hinten'
+      ConvTree.Root = <
+        item
+          ItemClasses = (
+            'TFlowTreeItem'
+            'TFlowTreeItem'
+            'TFlowTreeItem'
+            'TFlowTreeItem')
+          Items = <
+            item
+              FlowList.OpenGUIOnFinish = True
+              FlowList.ItemClasses = (
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp11.mp3'
+                      Caption = 
+                        'Ach, und welche Wild-West-Legende geht denn in so einen sch'#228'bige' +
+                        'n Laden, bei dem sich sogar der Boden schon nach oben w'#246'lbt. '
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'Lucky Luke.mp3'
+                      Caption = 
+                        'Lucky Luke hat hier gelernt, seinen Schatten zu erschie'#223'en. Er h' +
+                        'atte immer Angst, dass sein Schatten zuerst ziehen k'#246'nnte. Der G' +
+                        'edanke hat ihn wahnsinnig gemacht, deswegen habe ich die Bar ext' +
+                        'ra so umbauen lassen, dass sich der Boden dort in der Ecke nach ' +
+                        'oben w'#246'lbt. Dort kam ihm sein Schatten kleiner vor und er hat si' +
+                        'ch getraut, ihn herauszufordern. Er war schon immer ein kleiner ' +
+                        'Schisser.'
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp12.mp3'
+                      Caption = 'Wow, Wahnsinn.'
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Barmann'
+                end>
+              Text = 'Wer denn so?'
+              OpenGUIOnFinish = True
+              ItemClasses = ()
+              Items = <>
+            end
+            item
+              FlowList.OpenGUIOnFinish = True
+              FlowList.ItemClasses = (
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TSleepFlowItem'
+                'TConversationFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op21.mp3'
+                      Caption = 
+                        'Ok, wenn du mich so lieb fragst. Also damals, als der Regen noch' +
+                        ' fiel, war es trotzdem genauso hei'#223' wie heute. Warum also fiel d' +
+                        'amals der Regen, aber heute nicht mehr?'
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp21.mp3'
+                      Caption = 'Das kann ja gar nicht sein.'
+                    end
+                    item
+                      AudioFile = 'hp22.mp3'
+                      Caption = 
+                        'Allein dadurch, dass ich in der Stadt bin, ist sie schon hei'#223'er ge' +
+                        'worden. '
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Barmann'
+                end
+                item
+                  Sleep = 500
+                end
+                item
+                  OnStarted = BarmannIndianaMentioned
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op 22.mp3'
+                      Caption = 
+                        'Wie dem auch sei ['#8230']. Damals gab es einen Indianer in unserer St' +
+                        'adt, und der war besonders. Er war ein Medizinmann und der einzig' +
+                        ' '#220'berlebende seines Stammes. Wir haben ihm erlaubt hier zu siede' +
+                        'ln, und seit dem regnete es hier, bis zu dem Tag X. Eine Legende ' +
+                        'besagt, dass er Gott mit seiner Geschichte zum Weinen bringen ko' +
+                        'nnte. Sie ist wohl so traurig, dass selbst harte Kerle wie die D' +
+                        'altons ihn in Ruhe lie'#223'en, wenn sie wieder aus ihrer Zelle ausbr' +
+                        'achen. '
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end>
+              Text = 'Dann hau mal eine Geschichte raus, mein Guter.'
+              OpenGUIOnFinish = True
+              ItemClasses = ()
+              Items = <>
+            end
+            item
+              FlowList.ItemClasses = (
+                'TConversationFlowItem'
+                'TSleepFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op 31.mp3'
+                      Caption = 
+                        'Ja, das ist nicht so einfach. Damals, als noch unsere Ernten '#252'pp' +
+                        'ig  und die Miene noch Gold gab, war unser kleines St'#228'dtchen vol' +
+                        'ler Menschen und einer der gr'#246#223'ten Handelspl'#228'tze westlich des Um' +
+                        'pulumpo Rivers. Damals hielt mehrmals t'#228'glich ein Zug an unserem' +
+                        ' Bahnhof. Ach ja, als w'#228'r es gestern gewesen (*seufz*). Als ich ' +
+                        'noch ein kleiner Bub war und mein Vater mir gerade die ersten Le' +
+                        'ktionen als Barmann gab, fing es an. NEIN, es h'#246'rte auf.'
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end
+                item
+                  Sleep = 1000
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp31.mp3'
+                      Caption = 
+                        'Mann, jetzt spann mich nicht auf die Folter. Was h'#246'rte auf? - Un' +
+                        'd spar dir deine k'#252'nstlerischen Pausen.'
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op 32.mp3'
+                      Caption = 
+                        'ES H'#214'RTE AUF ZU REGNEN! Es regnete nun seit Jahrzehnten nicht me' +
+                        'hr ein Tropfen. Alle verlie'#223'en P-Town fr'#252'her oder sp'#228'ter, nur di' +
+                        'e Harten sind geblieben. '#8211' Oder die Idioten. Ich mein schau dir ' +
+                        'mal den Goldgr'#228'ber an, der hat sich schon vor 20 Jahren seine le' +
+                        'tzte graue Zelle weggesoffen, nachdem er kein Gold mehr gefunden' +
+                        ' hat. Der wei'#223' schon gar nicht mehr was er da trinkt. '
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp 32.mp3'
+                      Caption = 
+                        'Ja und? Ich wollte wissen, wie ich hier weg komme und nicht dein' +
+                        'e Kindheitsgeschichte.'
+                    end>
+                  Person = Player
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op 33.mp3'
+                      Caption = 
+                        'Das erkl'#228'r ich ja grade. Also, wo war ich? Ach ja, der Zug f'#228'hrt' +
+                        ' nicht mehr. Nachdem die Menschen nicht mehr hierherkamen wurde ' +
+                        'die Linie stillgelegt. '
+                    end>
+                  Person = Barmann
+                  Dialog = 'Barmann'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp33.mp3'
+                      Caption = 'Na toll, danke f'#252'r die Info. *grummel, grummel*'
+                    end>
+                  Person = Player
+                  Dialog = 'Barmann'
+                end>
+              Text = 
+                'Dann kannst du mir bestimmt weiterhelfen, wie komm ich hier wied' +
+                'er weg?'
+              ItemClasses = ()
+              Items = <>
+            end
+            item
+              FlowList.ItemClasses = (
+                'TConversationFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      Caption = 'Nee, danke, kein Interesse.'
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                end>
+              Text = 'Nee, danke, kein Interesse.'
+              ItemClasses = ()
+              Items = <>
+            end>
+        end>
+      CaptColor = 3947580
+    end
+    object Goldgraeber: TPerson
+      FixedSide = Height
+      OriginalWidth = 199.259918212890600000
+      OriginalHeight = 257.000000000000000000
+      Width = 199.259918212890600000
+      Height = 257.000000000000000000
+      Left = 552.000000000000000000
+      Top = 104.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations.Selected = 'Idle'
+      Animations = <
+        item
+          Name = 'Idle'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem'
+            'TSleepFlowItem'
+            'TAnimationFlowItem'
+            'TSleepFlowItem'
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Goldgraeber
+              Picture = 'Goldgr'#228'ber.png'
+            end
+            item
+              Sleep = 5000
+            end
+            item
+              Object = Goldgraeber
+              Animation = 'Idle-Start'
+              FPS = 4.000000000000000000
+            end
+            item
+              Sleep = 1000
+            end
+            item
+              Object = Goldgraeber
+              Animation = 'Idle-End'
+              FPS = 4.000000000000000000
+            end>
+          SaveStatePos = True
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D22576964
+            7468222056616C75653D223139392C323539393138323132383931222F3E3C70
+            6C3A5450726F7065727479204E616D653D22486569676874222056616C75653D
+            22323537222F3E3C706C3A5450726F7065727479204E616D653D224C65667422
+            2056616C75653D22353532222F3E3C706C3A5450726F7065727479204E616D65
+            3D22546F70222056616C75653D22313034222F3E3C2F706C3A50726F70657274
+            794C6973743E0D0A}
+        end
+        item
+          Name = 'Gone'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Goldgraeber
+              Picture = 'Textur Tisch.png'
+            end>
+          SaveStatePos = True
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D22576964
+            7468222056616C75653D223234392C373936393531323933393435222F3E3C70
+            6C3A5450726F7065727479204E616D653D22486569676874222056616C75653D
+            22313835222F3E3C706C3A5450726F7065727479204E616D653D224C65667422
+            2056616C75653D22353034222F3E3C706C3A5450726F7065727479204E616D65
+            3D22546F70222056616C75653D22313532222F3E3C2F706C3A50726F70657274
+            794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Talkable'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TConversationFlowItem'
+            'TOpenConvFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'gg 1.mp3'
+                  Caption = 
+                    'Na da hab ich dich ja genau richtig eingesch'#228'tzt. Kaum Mittag un' +
+                    'd schon lungert der Schluckspecht hier in der Bar herum.'
+                end>
+              Person = Goldgraeber
+              Dialog = 'Goldgr'#228'ber'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'jp1.mp3'
+                  Caption = 
+                    '*st'#246'hn* Im Gegensatz zu dir hab ich gerade keinen Alkohol in der' +
+                    ' Hand.'
+                end>
+              Person = Player
+              IdleAnimation = 'Hinten'
+              TalkAnimation = 'Hinten'
+              Dialog = 'Goldgr'#228'ber'
+            end
+            item
+              ConvParts = <
+                item
+                  AudioFile = 'gg 2.mp3'
+                  Caption = 
+                    'Ja umso schlimmer. Bei dir kommt der Barmann mit dem Nachschenke' +
+                    'n schon nicht mehr hinterher. Aber du kannst ja bei mir mittrink' +
+                    'en, wenn du willst.'
+                end>
+              Person = Goldgraeber
+              Dialog = 'Goldgr'#228'ber'
+            end
+            item
+              Object = Goldgraeber
+            end>
+        end>
+      States.Selected = 'Talkable'
+      States = <
+        item
+          Name = 'Talkable'
+          FlowList.ItemClasses = (
+            'TChangeAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Goldgraeber
+              Animation = 'Idle'
+            end>
+        end
+        item
+          Name = 'Gone'
+          FlowList.ItemClasses = (
+            'TChangeAnimationFlowItem'
+            'TSleepFlowItem')
+          FlowList.Items = <
+            item
+              Object = Goldgraeber
+              Animation = 'Gone'
+            end
+            item
+              OnStarted = GoneStateSelected
+              Sleep = 1000
+            end>
+        end>
+      ItemDropEvents = <>
+      PlayerOffset = -10.000000000000000000
+      PlayerFacing = Right
+      PlayerAnimation = 'Hinten'
+      ConvTree.Root = <
+        item
+          ItemClasses = (
+            'TFlowTreeItem'
+            'TFlowTreeItem')
+          Items = <
+            item
+              FlowList.ItemClasses = (
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TConversationFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp11.mp3'
+                      Caption = 'Nee, du, ich will gar nicht wissen, was du da trinkst.'
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Goldgr'#228'ber'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'gg op11.mp3'
+                      Caption = 
+                        'Das ist exklusiver Whiskey vom Quacksalber. Der Billigfusel, den' +
+                        ' die schmierige Bowlingkugel da ausschenkt, kann ja keiner runte' +
+                        'rkriegen.'
+                    end>
+                  Person = Goldgraeber
+                  Dialog = 'Goldgr'#228'ber'
+                end
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'bm op 11.mp3'
+                      Caption = 
+                        'Hey, vergraul mir nicht meine Kunden. Sei du mal lieber froh, da' +
+                        'ss ich dich hier sitzen lasse, obwohl du nichts bestellst. Nur w' +
+                        'eil du mal der beste Kunde meines Vaters warst hei'#223't das nicht, ' +
+                        'dass du dir alles erlauben kannst.'
+                    end>
+                  Person = Barmann
+                  Dialog = 'Goldgr'#228'ber'
+                end
+                item
+                  OnStarted = GoldDiggerDrinkMentioned
+                  ConvParts = <
+                    item
+                      AudioFile = 'gg op12.mp3'
+                      Caption = 'Pah.'
+                    end>
+                  Person = Goldgraeber
+                  Dialog = 'Goldgr'#228'ber'
+                end>
+              Text = 'Nee, du, ich will gar nicht wissen, was du da trinkst.'
+              ItemClasses = ()
+              Items = <>
+            end
+            item
+              FlowList.ItemClasses = (
+                'TConversationFlowItem'
+                'TConversationFlowItem'
+                'TChangeStateFlowItem')
+              FlowList.Items = <
+                item
+                  ConvParts = <
+                    item
+                      AudioFile = 'hp21.mp3'
+                      Caption = 'Ich trinke mittags nicht.'
+                    end>
+                  Person = Player
+                  IdleAnimation = 'Hinten'
+                  TalkAnimation = 'Hinten'
+                  Dialog = 'Goldgr'#228'ber'
+                end
+                item
+                  OnStarted = GoldDiggerInvited
+                  ConvParts = <
+                    item
+                      AudioFile = 'gg op 21.mp3'
+                      Caption = 
+                        'Nat'#252'rlich nicht, ich kenn dich ja. Aber das ist kein Problem, ko' +
+                        'mm doch einfach sp'#228'ter zu mir nach Hause, da k'#246'nnen wir einen tr' +
+                        'inken.'
+                    end>
+                  Person = Goldgraeber
+                  Dialog = 'Goldgr'#228'ber'
+                end
+                item
+                  FrameName = 'TStreetFrame'
+                  HotspotName = 'FakeGGEntry'
+                  State = 'OpenedFirst'
+                end>
+              Text = 'Ich trinke mittags nicht.'
+              ItemClasses = ()
+              Items = <>
+            end>
+        end>
+      CaptColor = 1068919
+    end
+    object Fass: TForegroundObj
+      FixedSide = Height
+      OriginalWidth = 97.000000000000000000
+      OriginalHeight = 97.000000000000000000
+      Width = 97.000000000000000000
+      Height = 97.000000000000000000
+      Left = 88.000000000000000000
+      Top = 192.000000000000000000
+      RotationAngle = -5.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Fass
+          Picture = 'Fass 1.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object BackRoomExit: TExit
+      OriginalWidth = 97.000000000000000000
+      OriginalHeight = 172.671691894531300000
+      Width = 97.000000000000000000
+      Height = 172.671691894531300000
+      Left = 192.000000000000000000
+      Top = 88.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations.Selected = 'Close'
+      Animations = <
+        item
+          Name = 'Open'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem'
+            'TAudioFlowItem')
+          FlowList.Items = <
+            item
+              Object = BackRoomExit
+              Picture = 'T'#252'r Offen.png'
+            end
+            item
+              AudioFile = 'tuerauf.mp3'
+              Object = BackRoomExit
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D224261636B526F6F6D45786974222F3E3C706C3A545072
+            6F7065727479204E616D653D22546167222056616C75653D2230222F3E3C706C
+            3A5450726F7065727479204E616D653D225374796C654E616D65222056616C75
+            653D22222F3E3C706C3A54436C61737350726F7065727479204E616D653D2254
+            6F756368223E3C706C3A545265666572656E636550726F7065727479204E616D
+            653D22476573747572654D616E61676572222056616C75653D22222F3E3C706C
+            3A5450726F7065727479204E616D653D22496E74657261637469766547657374
+            75726573222056616C75653D22222F3E3C2F706C3A54436C61737350726F7065
+            7274793E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E
+            47657374757265222056616C75653D22222F3E3C706C3A5450726F7065727479
+            204E616D653D225265736F7572636550617468222056616C75653D22433A5C55
+            736572735C446F6D696E696B5C446F63756D656E74735C456D62617263616465
+            726F5C53747564696F5C50726F6A656B74655C416476656E747572655C57696E
+            33325C44656275675C5265736F75726365735C4672616D65735C53616C6F6F6E
+            222F3E3C706C3A5450726F7065727479204E616D653D22466978656453696465
+            222056616C75653D225769647468222F3E3C706C3A5450726F7065727479204E
+            616D653D224F726967696E616C5769647468222056616C75653D223937222F3E
+            3C706C3A5450726F7065727479204E616D653D224F726967696E616C48656967
+            6874222056616C75653D22313639222F3E3C706C3A5450726F7065727479204E
+            616D653D225769647468222056616C75653D223937222F3E3C706C3A5450726F
+            7065727479204E616D653D22486569676874222056616C75653D22313639222F
+            3E3C706C3A5450726F7065727479204E616D653D224C656674222056616C7565
+            3D22313932222F3E3C706C3A5450726F7065727479204E616D653D22546F7022
+            2056616C75653D223838222F3E3C706C3A5450726F7065727479204E616D653D
+            2243616E466F637573222056616C75653D2274727565222F3E3C706C3A545072
+            6F7065727479204E616D653D2254616253746F70222056616C75653D22747275
+            65222F3E3C706C3A54436C61737350726F7065727479204E616D653D22506164
+            64696E67223E3C706C3A5450726F7065727479204E616D653D224C6566742220
+            56616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D2254
+            6F70222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D
+            653D225269676874222056616C75653D2230222F3E3C706C3A5450726F706572
+            7479204E616D653D22426F74746F6D222056616C75653D2230222F3E3C2F706C
+            3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E61
+            6D653D224F706163697479222056616C75653D2231222F3E3C706C3A5450726F
+            7065727479204E616D653D22526F746174696F6E416E676C65222056616C7565
+            3D2230222F3E3C706C3A54436C61737350726F7065727479204E616D653D2252
+            6F746174696F6E43656E746572223E3C706C3A5450726F7065727479204E616D
+            653D2258222056616C75653D22302C35222F3E3C706C3A5450726F7065727479
+            204E616D653D2259222056616C75653D22302C35222F3E3C2F706C3A54436C61
+            737350726F70657274793E3C706C3A5450726F7065727479204E616D653D2256
+            697369626C65222056616C75653D2274727565222F3E3C706C3A54436C617373
+            50726F7065727479204E616D653D22416E696D6174696F6E73223E3C706C3A54
+            436C61737350726F7065727479204E616D653D22536176656450726F70657274
+            696573222F3E3C706C3A5450726F7065727479204E616D653D2253656C656374
+            6564222056616C75653D22222F3E3C2F706C3A54436C61737350726F70657274
+            793E3C706C3A54436C61737350726F7065727479204E616D653D224C6F616446
+            6C6F77223E3C706C3A544D6574686F6450726F7065727479204E616D653D224F
+            6E53746172746564222056616C75653D22222F3E3C706C3A544D6574686F6450
+            726F7065727479204E616D653D224F6E53746F70706564222056616C75653D22
+            222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E50
+            6175736564222056616C75653D22222F3E3C706C3A544D6574686F6450726F70
+            65727479204E616D653D224F6E46696E6973686564222056616C75653D22222F
+            3E3C706C3A5450726F7065727479204E616D653D22526570656174222056616C
+            75653D2266616C7365222F3E3C2F706C3A54436C61737350726F70657274793E
+            3C706C3A5450726F7065727479204E616D653D22416E696D6174696F6E222056
+            616C75653D22222F3E3C706C3A54436C61737350726F7065727479204E616D65
+            3D22416E696D6174696F6E536176656450726F70657274696573222F3E3C706C
+            3A5450726F7065727479204E616D653D22546578744F66667365745822205661
+            6C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22546578
+            744F666673657459222056616C75653D2230222F3E3C706C3A5450726F706572
+            7479204E616D653D2243617074696F6E436F6C6F72222056616C75653D223235
+            35222F3E3C706C3A54436C61737350726F7065727479204E616D653D22496E73
+            70656374466C6F7773222F3E3C706C3A54436C61737350726F7065727479204E
+            616D653D22416374696F6E466C6F7773222F3E3C706C3A54436C61737350726F
+            7065727479204E616D653D22537461746573223E3C706C3A5450726F70657274
+            79204E616D653D2253656C6563746564222056616C75653D22222F3E3C2F706C
+            3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E61
+            6D653D225374617465222056616C75653D22222F3E3C706C3A54436C61737350
+            726F7065727479204E616D653D224974656D44726F704576656E7473222F3E3C
+            706C3A5450726F7065727479204E616D653D22506C617965724F666673657422
+            2056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22
+            506C61796572466163696E67222056616C75653D224C656674222F3E3C706C3A
+            5450726F7065727479204E616D653D22506C61796572416E696D6174696F6E22
+            2056616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E
+            616D653D224F6E496E7370656374222056616C75653D22222F3E3C706C3A544D
+            6574686F6450726F7065727479204E616D653D224F6E416374696F6E22205661
+            6C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D65
+            3D224F6E4974656D44726F70222056616C75653D22222F3E3C2F706C3A50726F
+            70657274794C6973743E0D0A}
+        end
+        item
+          Name = 'Close'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem'
+            'TAudioFlowItem')
+          FlowList.Items = <
+            item
+              Object = BackRoomExit
+              Picture = 'T'#252'r Zu.png'
+            end
+            item
+              AudioFile = 'tuerzu.mp3'
+              Object = BackRoomExit
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D224261636B526F6F6D45786974222F3E3C706C3A545072
+            6F7065727479204E616D653D22546167222056616C75653D2230222F3E3C706C
+            3A5450726F7065727479204E616D653D225374796C654E616D65222056616C75
+            653D22222F3E3C706C3A54436C61737350726F7065727479204E616D653D2254
+            6F756368223E3C706C3A545265666572656E636550726F7065727479204E616D
+            653D22476573747572654D616E61676572222056616C75653D22222F3E3C706C
+            3A5450726F7065727479204E616D653D22496E74657261637469766547657374
+            75726573222056616C75653D22222F3E3C2F706C3A54436C61737350726F7065
+            7274793E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E
+            47657374757265222056616C75653D22222F3E3C706C3A5450726F7065727479
+            204E616D653D225265736F7572636550617468222056616C75653D22433A5C55
+            736572735C446F6D696E696B5C446F63756D656E74735C456D62617263616465
+            726F5C53747564696F5C50726F6A656B74655C416476656E747572655C57696E
+            33325C44656275675C5265736F75726365735C4672616D65735C53616C6F6F6E
+            222F3E3C706C3A5450726F7065727479204E616D653D22466978656453696465
+            222056616C75653D225769647468222F3E3C706C3A5450726F7065727479204E
+            616D653D224F726967696E616C5769647468222056616C75653D223937222F3E
+            3C706C3A5450726F7065727479204E616D653D224F726967696E616C48656967
+            6874222056616C75653D22313639222F3E3C706C3A5450726F7065727479204E
+            616D653D225769647468222056616C75653D223937222F3E3C706C3A5450726F
+            7065727479204E616D653D22486569676874222056616C75653D22313639222F
+            3E3C706C3A5450726F7065727479204E616D653D224C656674222056616C7565
+            3D22313932222F3E3C706C3A5450726F7065727479204E616D653D22546F7022
+            2056616C75653D223838222F3E3C706C3A5450726F7065727479204E616D653D
+            2243616E466F637573222056616C75653D2274727565222F3E3C706C3A545072
+            6F7065727479204E616D653D2254616253746F70222056616C75653D22747275
+            65222F3E3C706C3A54436C61737350726F7065727479204E616D653D22506164
+            64696E67223E3C706C3A5450726F7065727479204E616D653D224C6566742220
+            56616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D2254
+            6F70222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D
+            653D225269676874222056616C75653D2230222F3E3C706C3A5450726F706572
+            7479204E616D653D22426F74746F6D222056616C75653D2230222F3E3C2F706C
+            3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E61
+            6D653D224F706163697479222056616C75653D2231222F3E3C706C3A5450726F
+            7065727479204E616D653D22526F746174696F6E416E676C65222056616C7565
+            3D2230222F3E3C706C3A54436C61737350726F7065727479204E616D653D2252
+            6F746174696F6E43656E746572223E3C706C3A5450726F7065727479204E616D
+            653D2258222056616C75653D22302C35222F3E3C706C3A5450726F7065727479
+            204E616D653D2259222056616C75653D22302C35222F3E3C2F706C3A54436C61
+            737350726F70657274793E3C706C3A5450726F7065727479204E616D653D2256
+            697369626C65222056616C75653D2274727565222F3E3C706C3A54436C617373
+            50726F7065727479204E616D653D22416E696D6174696F6E73223E3C706C3A54
+            436C61737350726F7065727479204E616D653D22536176656450726F70657274
+            696573222F3E3C706C3A5450726F7065727479204E616D653D2253656C656374
+            6564222056616C75653D22222F3E3C2F706C3A54436C61737350726F70657274
+            793E3C706C3A54436C61737350726F7065727479204E616D653D224C6F616446
+            6C6F77223E3C706C3A544D6574686F6450726F7065727479204E616D653D224F
+            6E53746172746564222056616C75653D22222F3E3C706C3A544D6574686F6450
+            726F7065727479204E616D653D224F6E53746F70706564222056616C75653D22
+            222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E50
+            6175736564222056616C75653D22222F3E3C706C3A544D6574686F6450726F70
+            65727479204E616D653D224F6E46696E6973686564222056616C75653D22222F
+            3E3C706C3A5450726F7065727479204E616D653D22526570656174222056616C
+            75653D2266616C7365222F3E3C2F706C3A54436C61737350726F70657274793E
+            3C706C3A5450726F7065727479204E616D653D22416E696D6174696F6E222056
+            616C75653D22222F3E3C706C3A54436C61737350726F7065727479204E616D65
+            3D22416E696D6174696F6E536176656450726F70657274696573222F3E3C706C
+            3A5450726F7065727479204E616D653D22546578744F66667365745822205661
+            6C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22546578
+            744F666673657459222056616C75653D2230222F3E3C706C3A5450726F706572
+            7479204E616D653D2243617074696F6E436F6C6F72222056616C75653D223235
+            35222F3E3C706C3A54436C61737350726F7065727479204E616D653D22496E73
+            70656374466C6F7773222F3E3C706C3A54436C61737350726F7065727479204E
+            616D653D22416374696F6E466C6F7773222F3E3C706C3A54436C61737350726F
+            7065727479204E616D653D22537461746573223E3C706C3A5450726F70657274
+            79204E616D653D2253656C6563746564222056616C75653D22222F3E3C2F706C
+            3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E61
+            6D653D225374617465222056616C75653D22222F3E3C706C3A54436C61737350
+            726F7065727479204E616D653D224974656D44726F704576656E7473222F3E3C
+            706C3A5450726F7065727479204E616D653D22506C617965724F666673657422
+            2056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22
+            506C61796572466163696E67222056616C75653D224C656674222F3E3C706C3A
+            5450726F7065727479204E616D653D22506C61796572416E696D6174696F6E22
+            2056616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E
+            616D653D224F6E496E7370656374222056616C75653D22222F3E3C706C3A544D
+            6574686F6450726F7065727479204E616D653D224F6E416374696F6E22205661
+            6C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D65
+            3D224F6E4974656D44726F70222056616C75653D22222F3E3C2F706C3A50726F
+            70657274794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = (
+        'TChangeAnimationFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = BackRoomExit
+          Animation = 'Close'
+        end>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Locked'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Hey, Hey!'
+                end
+                item
+                  Caption = 'Du kannst da nicht einfach so rein.'
+                end
+                item
+                  Caption = 'Das ist privat!'
+                end>
+              Person = Tänzerin
+              IdleAnimation = 'Idle'
+              TalkAnimation = 'Talk'
+            end>
+        end
+        item
+          Name = 'Opened'
+          FlowList.ItemClasses = (
+            'TChangeAnimationFlowItem'
+            'TSleepFlowItem'
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              Object = BackRoomExit
+              Animation = 'Open'
+            end
+            item
+              Sleep = 500
+            end
+            item
+              Location = 'TDancerRoomFrame'
+              OpenFlowName = 'FromSaloon'
+            end>
+        end>
+      States.Selected = 'Locked'
+      States = <
+        item
+          Name = 'Locked'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end
+        item
+          Name = 'Opened'
+          FlowList.ItemClasses = ()
+          FlowList.Items = <>
+        end>
+      ItemDropEvents = <>
+      PlayerFacing = Right
+      PlayerAnimation = 'Hinten'
+      CaptColor = 255
+    end
+    object Exit1: TExit
+      OriginalWidth = 905.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 905.000000000000000000
+      Height = 50.000000000000000000
+      Left = 8.000000000000000000
+      Top = 408.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              Location = 'TMarketPlaceFrame'
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      PlayerOffset = 300.000000000000000000
+      CaptColor = 255
+    end
+    object Tänzerin: TPerson
+      FixedSide = Height
+      OriginalWidth = 106.427818298339800000
+      OriginalHeight = 202.000000000000000000
+      Width = 106.427818298339800000
+      Height = 202.000000000000000000
+      Left = 280.000000000000000000
+      Top = 112.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {3C544F776E656450726F70657274795365742F3E0D0A}
+      Animations.Selected = 'Idle'
+      Animations = <
+        item
+          Name = 'Idle'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Tänzerin
+              Picture = 'T'#228'nzerin normal.png'
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D2254C3A46E7A6572696E222F3E3C706C3A5450726F7065
+            727479204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450
+            726F7065727479204E616D653D225374796C654E616D65222056616C75653D22
+            222F3E3C706C3A54436C61737350726F7065727479204E616D653D22546F7563
+            68223E3C706C3A545265666572656E636550726F7065727479204E616D653D22
+            476573747572654D616E61676572222056616C75653D22222F3E3C706C3A5450
+            726F7065727479204E616D653D22496E74657261637469766547657374757265
+            73222056616C75653D22222F3E3C2F706C3A54436C61737350726F7065727479
+            3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E476573
+            74757265222056616C75653D22222F3E3C706C3A5450726F7065727479204E61
+            6D653D225265736F7572636550617468222056616C75653D22433A5C55736572
+            735C446F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C
+            53747564696F5C50726F6A656B74655C416476656E747572655C57696E33325C
+            52656C656173655C5265736F75726365735C506572736F6E735C54C3A46E222F
+            3E3C706C3A5450726F7065727479204E616D653D224669786564536964652220
+            56616C75653D225769647468222F3E3C706C3A5450726F7065727479204E616D
+            653D224F726967696E616C5769647468222056616C75653D22313035222F3E3C
+            706C3A5450726F7065727479204E616D653D224F726967696E616C4865696768
+            74222056616C75653D22323138222F3E3C706C3A5450726F7065727479204E61
+            6D653D225769647468222056616C75653D22313035222F3E3C706C3A5450726F
+            7065727479204E616D653D22486569676874222056616C75653D22323138222F
+            3E3C706C3A5450726F7065727479204E616D653D224C656674222056616C7565
+            3D22333736222F3E3C706C3A5450726F7065727479204E616D653D22546F7022
+            2056616C75653D22313532222F3E3C706C3A5450726F7065727479204E616D65
+            3D2243616E466F637573222056616C75653D2274727565222F3E3C706C3A5450
+            726F7065727479204E616D653D2254616253746F70222056616C75653D227472
+            7565222F3E3C706C3A54436C61737350726F7065727479204E616D653D225061
+            6464696E67223E3C706C3A5450726F7065727479204E616D653D224C65667422
+            2056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22
+            546F70222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D225269676874222056616C75653D2230222F3E3C706C3A5450726F7065
+            727479204E616D653D22426F74746F6D222056616C75653D2230222F3E3C2F70
+            6C3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E
+            616D653D224F706163697479222056616C75653D2231222F3E3C706C3A545072
+            6F7065727479204E616D653D22526F746174696F6E416E676C65222056616C75
+            653D2230222F3E3C706C3A54436C61737350726F7065727479204E616D653D22
+            526F746174696F6E43656E746572223E3C706C3A5450726F7065727479204E61
+            6D653D2258222056616C75653D22302C35222F3E3C706C3A5450726F70657274
+            79204E616D653D2259222056616C75653D22302C35222F3E3C2F706C3A54436C
+            61737350726F70657274793E3C706C3A5450726F7065727479204E616D653D22
+            56697369626C65222056616C75653D2274727565222F3E3C706C3A54436C6173
+            7350726F7065727479204E616D653D22416E696D6174696F6E73223E3C706C3A
+            54436C61737350726F7065727479204E616D653D22536176656450726F706572
+            74696573222F3E3C706C3A5450726F7065727479204E616D653D2253656C6563
+            746564222056616C75653D22222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A54436C61737350726F7065727479204E616D653D224C6F6164
+            466C6F77223E3C706C3A544D6574686F6450726F7065727479204E616D653D22
+            4F6E53746172746564222056616C75653D22222F3E3C706C3A544D6574686F64
+            50726F7065727479204E616D653D224F6E53746F70706564222056616C75653D
+            22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E
+            506175736564222056616C75653D22222F3E3C706C3A544D6574686F6450726F
+            7065727479204E616D653D224F6E46696E6973686564222056616C75653D2222
+            2F3E3C706C3A5450726F7065727479204E616D653D2252657065617422205661
+            6C75653D2266616C7365222F3E3C2F706C3A54436C61737350726F7065727479
+            3E3C706C3A5450726F7065727479204E616D653D22416E696D6174696F6E2220
+            56616C75653D22222F3E3C706C3A54436C61737350726F7065727479204E616D
+            653D22416E696D6174696F6E536176656450726F70657274696573222F3E3C70
+            6C3A5450726F7065727479204E616D653D22546578744F666673657458222056
+            616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D225465
+            78744F666673657459222056616C75653D2230222F3E3C706C3A5450726F7065
+            727479204E616D653D22546578745769647468222056616C75653D2232303022
+            2F3E3C706C3A5450726F7065727479204E616D653D2243617074696F6E436F6C
+            6F72222056616C75653D22323535222F3E3C706C3A54436C61737350726F7065
+            727479204E616D653D22496E7370656374466C6F7773222F3E3C706C3A54436C
+            61737350726F7065727479204E616D653D22416374696F6E466C6F7773222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D2253746174657322
+            3E3C706C3A5450726F7065727479204E616D653D2253656C6563746564222056
+            616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C
+            3A5450726F7065727479204E616D653D225374617465222056616C75653D2222
+            2F3E3C706C3A54436C61737350726F7065727479204E616D653D224974656D44
+            726F704576656E7473222F3E3C706C3A5450726F7065727479204E616D653D22
+            506C617965724F6666736574222056616C75653D2230222F3E3C706C3A545072
+            6F7065727479204E616D653D22506C61796572466163696E67222056616C7565
+            3D224C656674222F3E3C706C3A5450726F7065727479204E616D653D22506C61
+            796572416E696D6174696F6E222056616C75653D22222F3E3C706C3A544D6574
+            686F6450726F7065727479204E616D653D224F6E496E7370656374222056616C
+            75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D
+            224F6E416374696F6E222056616C75653D22222F3E3C706C3A544D6574686F64
+            50726F7065727479204E616D653D224F6E4974656D44726F70222056616C7565
+            3D22222F3E3C706C3A54436C61737350726F7065727479204E616D653D22436F
+            6E7654726565222F3E3C2F706C3A50726F70657274794C6973743E0D0A}
+        end
+        item
+          Name = 'Talk'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Tänzerin
+              Animation = 'Talk'
+              FPS = 3.000000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D2254C3A46E7A6572696E222F3E3C706C3A5450726F7065
+            727479204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450
+            726F7065727479204E616D653D225374796C654E616D65222056616C75653D22
+            222F3E3C706C3A54436C61737350726F7065727479204E616D653D22546F7563
+            68223E3C706C3A545265666572656E636550726F7065727479204E616D653D22
+            476573747572654D616E61676572222056616C75653D22222F3E3C706C3A5450
+            726F7065727479204E616D653D22496E74657261637469766547657374757265
+            73222056616C75653D22222F3E3C2F706C3A54436C61737350726F7065727479
+            3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E476573
+            74757265222056616C75653D22222F3E3C706C3A5450726F7065727479204E61
+            6D653D225265736F7572636550617468222056616C75653D22433A5C55736572
+            735C446F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C
+            53747564696F5C50726F6A656B74655C416476656E747572655C57696E33325C
+            52656C656173655C5265736F75726365735C506572736F6E735C54C3A46E222F
+            3E3C706C3A5450726F7065727479204E616D653D224669786564536964652220
+            56616C75653D225769647468222F3E3C706C3A5450726F7065727479204E616D
+            653D224F726967696E616C5769647468222056616C75653D22313035222F3E3C
+            706C3A5450726F7065727479204E616D653D224F726967696E616C4865696768
+            74222056616C75653D22323138222F3E3C706C3A5450726F7065727479204E61
+            6D653D225769647468222056616C75653D22313035222F3E3C706C3A5450726F
+            7065727479204E616D653D22486569676874222056616C75653D22323138222F
+            3E3C706C3A5450726F7065727479204E616D653D224C656674222056616C7565
+            3D22333736222F3E3C706C3A5450726F7065727479204E616D653D22546F7022
+            2056616C75653D22313532222F3E3C706C3A5450726F7065727479204E616D65
+            3D2243616E466F637573222056616C75653D2274727565222F3E3C706C3A5450
+            726F7065727479204E616D653D2254616253746F70222056616C75653D227472
+            7565222F3E3C706C3A54436C61737350726F7065727479204E616D653D225061
+            6464696E67223E3C706C3A5450726F7065727479204E616D653D224C65667422
+            2056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22
+            546F70222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D225269676874222056616C75653D2230222F3E3C706C3A5450726F7065
+            727479204E616D653D22426F74746F6D222056616C75653D2230222F3E3C2F70
+            6C3A54436C61737350726F70657274793E3C706C3A5450726F7065727479204E
+            616D653D224F706163697479222056616C75653D2231222F3E3C706C3A545072
+            6F7065727479204E616D653D22526F746174696F6E416E676C65222056616C75
+            653D2230222F3E3C706C3A54436C61737350726F7065727479204E616D653D22
+            526F746174696F6E43656E746572223E3C706C3A5450726F7065727479204E61
+            6D653D2258222056616C75653D22302C35222F3E3C706C3A5450726F70657274
+            79204E616D653D2259222056616C75653D22302C35222F3E3C2F706C3A54436C
+            61737350726F70657274793E3C706C3A5450726F7065727479204E616D653D22
+            56697369626C65222056616C75653D2274727565222F3E3C706C3A54436C6173
+            7350726F7065727479204E616D653D22416E696D6174696F6E73223E3C706C3A
+            54436C61737350726F7065727479204E616D653D22536176656450726F706572
+            74696573222F3E3C706C3A5450726F7065727479204E616D653D2253656C6563
+            746564222056616C75653D22222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A54436C61737350726F7065727479204E616D653D224C6F6164
+            466C6F77223E3C706C3A544D6574686F6450726F7065727479204E616D653D22
+            4F6E53746172746564222056616C75653D22222F3E3C706C3A544D6574686F64
+            50726F7065727479204E616D653D224F6E53746F70706564222056616C75653D
+            22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D224F6E
+            506175736564222056616C75653D22222F3E3C706C3A544D6574686F6450726F
+            7065727479204E616D653D224F6E46696E6973686564222056616C75653D2222
+            2F3E3C706C3A5450726F7065727479204E616D653D2252657065617422205661
+            6C75653D2266616C7365222F3E3C2F706C3A54436C61737350726F7065727479
+            3E3C706C3A5450726F7065727479204E616D653D22416E696D6174696F6E2220
+            56616C75653D22222F3E3C706C3A54436C61737350726F7065727479204E616D
+            653D22416E696D6174696F6E536176656450726F70657274696573222F3E3C70
+            6C3A5450726F7065727479204E616D653D22546578744F666673657458222056
+            616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D225465
+            78744F666673657459222056616C75653D2230222F3E3C706C3A5450726F7065
+            727479204E616D653D22546578745769647468222056616C75653D2232303022
+            2F3E3C706C3A5450726F7065727479204E616D653D2243617074696F6E436F6C
+            6F72222056616C75653D22323535222F3E3C706C3A54436C61737350726F7065
+            727479204E616D653D22496E7370656374466C6F7773222F3E3C706C3A54436C
+            61737350726F7065727479204E616D653D22416374696F6E466C6F7773222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D2253746174657322
+            3E3C706C3A5450726F7065727479204E616D653D2253656C6563746564222056
+            616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C
+            3A5450726F7065727479204E616D653D225374617465222056616C75653D2222
+            2F3E3C706C3A54436C61737350726F7065727479204E616D653D224974656D44
+            726F704576656E7473222F3E3C706C3A5450726F7065727479204E616D653D22
+            506C617965724F6666736574222056616C75653D2230222F3E3C706C3A545072
+            6F7065727479204E616D653D22506C61796572466163696E67222056616C7565
+            3D224C656674222F3E3C706C3A5450726F7065727479204E616D653D22506C61
+            796572416E696D6174696F6E222056616C75653D22222F3E3C706C3A544D6574
+            686F6450726F7065727479204E616D653D224F6E496E7370656374222056616C
+            75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D
+            224F6E416374696F6E222056616C75653D22222F3E3C706C3A544D6574686F64
+            50726F7065727479204E616D653D224F6E4974656D44726F70222056616C7565
+            3D22222F3E3C706C3A54436C61737350726F7065727479204E616D653D22436F
+            6E7654726565222F3E3C2F706C3A50726F70657274794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  AudioFile = 't1.mp3'
+                  Caption = 'W'#228'rst du ein Sherriff w'#252'rde ich dich mit nach oben nehmen.'
+                end>
+              Person = Tänzerin
+              IdleAnimation = 'Idle'
+              TalkAnimation = 'Talk'
+              Dialog = 'T'#228'nzerin'
+            end>
+        end>
+      States.Selected = 'Visible'
+      States = <
+        item
+          Name = 'Visible'
+          FlowList.ItemClasses = (
+            'TChangePropertyFlowItem')
+          FlowList.Items = <
+            item
+              Object = Tänzerin
+              PropertyName = 'Visible'
+              PropertyValue = 'true'
+            end>
+        end
+        item
+          Name = 'Hidden'
+          FlowList.ItemClasses = (
+            'TChangePropertyFlowItem')
+          FlowList.Items = <
+            item
+              Object = Tänzerin
+              PropertyName = 'Visible'
+              PropertyValue = 'false'
+            end>
+        end>
+      ItemDropEvents = <
+        item
+          ItemName = 'Sheriffstern'
+          HotspotState = 'Visible'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeLocalStateFlowItem'
+            'TChangeAnimationFlowItem'
+            'TChangeLocalStateFlowItem'
+            'TSleepFlowItem'
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  AudioFile = 't2.mp3'
+                  Caption = 'Oh, da ist ja mein Hilfssherriff. Komm begleite mich nach oben.'
+                end>
+              Person = Tänzerin
+              IdleAnimation = 'Idle'
+              TalkAnimation = 'Talk'
+              Dialog = 'T'#228'nzerin'
+            end
+            item
+              State = 'Hidden'
+              Object = Tänzerin
+            end
+            item
+              Object = BackRoomExit
+              Animation = 'Open'
+            end
+            item
+              State = 'Opened'
+              Object = BackRoomExit
+            end
+            item
+              Sleep = 1000
+            end
+            item
+              Location = 'TDancerRoomFrame'
+              OpenFlowName = 'FirstEntry'
+            end>
+        end>
+      PlayerOffset = 30.000000000000000000
+      PlayerAnimation = 'Hinten'
+      ConvTree.Root = <
+        item
+          ItemClasses = ()
+          Items = <>
+        end>
+      CaptColor = 16711935
+    end
+    object Player: TPlayer
+      FixedSide = Height
+      OriginalWidth = 114.517242431640600000
+      OriginalHeight = 234.000000000000000000
+      Width = 114.517242431640600000
+      Height = 234.000000000000000000
+      Left = 384.000000000000000000
+      Top = 128.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {3C544F776E656450726F70657274795365742F3E0D0A}
+      Animations.Selected = 'Idle'
+      Animations = <
+        item
+          Name = 'Idle'
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Player
+              Animation = 'Idle'
+              FPS = 1.000000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D22506C61796572222F3E3C706C3A5450726F7065727479
+            204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F70
+            65727479204E616D653D225374796C654E616D65222056616C75653D22222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D22546F756368223E
+            3C706C3A545265666572656E636550726F7065727479204E616D653D22476573
+            747572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F70
+            65727479204E616D653D22496E74657261637469766547657374757265732220
+            56616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C70
+            6C3A544D6574686F6450726F7065727479204E616D653D224F6E476573747572
+            65222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D
+            225265736F7572636550617468222056616C75653D22433A5C55736572735C44
+            6F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C537475
+            64696F5C50726F6A656B74655C416476656E747572655C57696E33325C52656C
+            656173655C5265736F75726365735C506C61796572222F3E3C706C3A5450726F
+            7065727479204E616D653D22466978656453696465222056616C75653D225769
+            647468222F3E3C706C3A5450726F7065727479204E616D653D224F726967696E
+            616C5769647468222056616C75653D22313133222F3E3C706C3A5450726F7065
+            727479204E616D653D224F726967696E616C486569676874222056616C75653D
+            22323236222F3E3C706C3A5450726F7065727479204E616D653D225769647468
+            222056616C75653D22313239222F3E3C706C3A5450726F7065727479204E616D
+            653D22486569676874222056616C75653D22323236222F3E3C706C3A5450726F
+            7065727479204E616D653D224C656674222056616C75653D22323438222F3E3C
+            706C3A5450726F7065727479204E616D653D22546F70222056616C75653D2231
+            3434222F3E3C706C3A5450726F7065727479204E616D653D2243616E466F6375
+            73222056616C75653D2274727565222F3E3C706C3A5450726F7065727479204E
+            616D653D2254616253746F70222056616C75653D2274727565222F3E3C706C3A
+            54436C61737350726F7065727479204E616D653D2250616464696E67223E3C70
+            6C3A5450726F7065727479204E616D653D224C656674222056616C75653D2230
+            222F3E3C706C3A5450726F7065727479204E616D653D22546F70222056616C75
+            653D2230222F3E3C706C3A5450726F7065727479204E616D653D225269676874
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22426F74746F6D222056616C75653D2230222F3E3C2F706C3A54436C61737350
+            726F70657274793E3C706C3A5450726F7065727479204E616D653D224F706163
+            697479222056616C75653D2231222F3E3C706C3A5450726F7065727479204E61
+            6D653D22526F746174696F6E416E676C65222056616C75653D2230222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22526F746174696F6E43
+            656E746572223E3C706C3A5450726F7065727479204E616D653D225822205661
+            6C75653D22302C35222F3E3C706C3A5450726F7065727479204E616D653D2259
+            222056616C75653D22302C35222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A5450726F7065727479204E616D653D2256697369626C652220
+            56616C75653D2274727565222F3E3C706C3A54436C61737350726F7065727479
+            204E616D653D22416E696D6174696F6E73223E3C706C3A54436C61737350726F
+            7065727479204E616D653D22536176656450726F70657274696573222F3E3C70
+            6C3A5450726F7065727479204E616D653D2253656C6563746564222056616C75
+            653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5443
+            6C61737350726F7065727479204E616D653D224C6F6164466C6F77223E3C706C
+            3A544D6574686F6450726F7065727479204E616D653D224F6E53746172746564
+            222056616C75653D22222F3E3C706C3A544D6574686F6450726F706572747920
+            4E616D653D224F6E53746F70706564222056616C75653D22222F3E3C706C3A54
+            4D6574686F6450726F7065727479204E616D653D224F6E506175736564222056
+            616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D
+            653D224F6E46696E6973686564222056616C75653D22222F3E3C706C3A545072
+            6F7065727479204E616D653D22526570656174222056616C75653D2266616C73
+            65222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F
+            7065727479204E616D653D22416E696D6174696F6E222056616C75653D22222F
+            3E3C706C3A54436C61737350726F7065727479204E616D653D22416E696D6174
+            696F6E536176656450726F70657274696573222F3E3C706C3A5450726F706572
+            7479204E616D653D22546578744F666673657458222056616C75653D2230222F
+            3E3C706C3A5450726F7065727479204E616D653D22546578744F666673657459
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22546578745769647468222056616C75653D22323030222F3E3C706C3A545072
+            6F7065727479204E616D653D2243617074696F6E436F6C6F72222056616C7565
+            3D22323535222F3E3C706C3A5450726F7065727479204E616D653D224D6F7665
+            416E696D6174696F6E222056616C75653D22222F3E3C706C3A5450726F706572
+            7479204E616D653D2249646C65416E696D6174696F6E222056616C75653D2222
+            2F3E3C706C3A5450726F7065727479204E616D653D22466163696E6744697265
+            6374696F6E222056616C75653D224C656674222F3E3C706C3A5450726F706572
+            7479204E616D653D2254657874757265446972656374696F6E222056616C7565
+            3D225269676874222F3E3C706C3A5450726F7065727479204E616D653D22594F
+            6666736574506572506963222056616C75653D2235222F3E3C706C3A5450726F
+            7065727479204E616D653D224D6F766553746F70506F73222056616C75653D22
+            30222F3E3C706C3A5450726F7065727479204E616D653D224D696E506F736974
+            696F6E222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D224D6178506F736974696F6E222056616C75653D22313030222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22506F736974696F6E22
+            3E3C706C3A5450726F7065727479204E616D653D2258222056616C75653D2232
+            3438222F3E3C706C3A5450726F7065727479204E616D653D2259222056616C75
+            653D22313434222F3E3C2F706C3A54436C61737350726F70657274793E3C2F70
+            6C3A50726F70657274794C6973743E0D0A}
+        end
+        item
+          Name = 'Talk'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Player
+              Animation = 'Talk'
+              FPS = 4.000000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D22506C61796572222F3E3C706C3A5450726F7065727479
+            204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F70
+            65727479204E616D653D225374796C654E616D65222056616C75653D22222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D22546F756368223E
+            3C706C3A545265666572656E636550726F7065727479204E616D653D22476573
+            747572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F70
+            65727479204E616D653D22496E74657261637469766547657374757265732220
+            56616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C70
+            6C3A544D6574686F6450726F7065727479204E616D653D224F6E476573747572
+            65222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D
+            225265736F7572636550617468222056616C75653D22433A5C55736572735C44
+            6F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C537475
+            64696F5C50726F6A656B74655C416476656E747572655C57696E33325C52656C
+            656173655C5265736F75726365735C506C61796572222F3E3C706C3A5450726F
+            7065727479204E616D653D22466978656453696465222056616C75653D225769
+            647468222F3E3C706C3A5450726F7065727479204E616D653D224F726967696E
+            616C5769647468222056616C75653D22313133222F3E3C706C3A5450726F7065
+            727479204E616D653D224F726967696E616C486569676874222056616C75653D
+            22323236222F3E3C706C3A5450726F7065727479204E616D653D225769647468
+            222056616C75653D22313239222F3E3C706C3A5450726F7065727479204E616D
+            653D22486569676874222056616C75653D22323236222F3E3C706C3A5450726F
+            7065727479204E616D653D224C656674222056616C75653D22323438222F3E3C
+            706C3A5450726F7065727479204E616D653D22546F70222056616C75653D2231
+            3434222F3E3C706C3A5450726F7065727479204E616D653D2243616E466F6375
+            73222056616C75653D2274727565222F3E3C706C3A5450726F7065727479204E
+            616D653D2254616253746F70222056616C75653D2274727565222F3E3C706C3A
+            54436C61737350726F7065727479204E616D653D2250616464696E67223E3C70
+            6C3A5450726F7065727479204E616D653D224C656674222056616C75653D2230
+            222F3E3C706C3A5450726F7065727479204E616D653D22546F70222056616C75
+            653D2230222F3E3C706C3A5450726F7065727479204E616D653D225269676874
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22426F74746F6D222056616C75653D2230222F3E3C2F706C3A54436C61737350
+            726F70657274793E3C706C3A5450726F7065727479204E616D653D224F706163
+            697479222056616C75653D2231222F3E3C706C3A5450726F7065727479204E61
+            6D653D22526F746174696F6E416E676C65222056616C75653D2230222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22526F746174696F6E43
+            656E746572223E3C706C3A5450726F7065727479204E616D653D225822205661
+            6C75653D22302C35222F3E3C706C3A5450726F7065727479204E616D653D2259
+            222056616C75653D22302C35222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A5450726F7065727479204E616D653D2256697369626C652220
+            56616C75653D2274727565222F3E3C706C3A54436C61737350726F7065727479
+            204E616D653D22416E696D6174696F6E73223E3C706C3A54436C61737350726F
+            7065727479204E616D653D22536176656450726F70657274696573222F3E3C70
+            6C3A5450726F7065727479204E616D653D2253656C6563746564222056616C75
+            653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5443
+            6C61737350726F7065727479204E616D653D224C6F6164466C6F77223E3C706C
+            3A544D6574686F6450726F7065727479204E616D653D224F6E53746172746564
+            222056616C75653D22222F3E3C706C3A544D6574686F6450726F706572747920
+            4E616D653D224F6E53746F70706564222056616C75653D22222F3E3C706C3A54
+            4D6574686F6450726F7065727479204E616D653D224F6E506175736564222056
+            616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D
+            653D224F6E46696E6973686564222056616C75653D22222F3E3C706C3A545072
+            6F7065727479204E616D653D22526570656174222056616C75653D2266616C73
+            65222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F
+            7065727479204E616D653D22416E696D6174696F6E222056616C75653D22222F
+            3E3C706C3A54436C61737350726F7065727479204E616D653D22416E696D6174
+            696F6E536176656450726F70657274696573222F3E3C706C3A5450726F706572
+            7479204E616D653D22546578744F666673657458222056616C75653D2230222F
+            3E3C706C3A5450726F7065727479204E616D653D22546578744F666673657459
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22546578745769647468222056616C75653D22323030222F3E3C706C3A545072
+            6F7065727479204E616D653D2243617074696F6E436F6C6F72222056616C7565
+            3D22323535222F3E3C706C3A5450726F7065727479204E616D653D224D6F7665
+            416E696D6174696F6E222056616C75653D22222F3E3C706C3A5450726F706572
+            7479204E616D653D2249646C65416E696D6174696F6E222056616C75653D2222
+            2F3E3C706C3A5450726F7065727479204E616D653D22466163696E6744697265
+            6374696F6E222056616C75653D224C656674222F3E3C706C3A5450726F706572
+            7479204E616D653D2254657874757265446972656374696F6E222056616C7565
+            3D225269676874222F3E3C706C3A5450726F7065727479204E616D653D22594F
+            6666736574506572506963222056616C75653D2235222F3E3C706C3A5450726F
+            7065727479204E616D653D224D6F766553746F70506F73222056616C75653D22
+            30222F3E3C706C3A5450726F7065727479204E616D653D224D696E506F736974
+            696F6E222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D224D6178506F736974696F6E222056616C75653D22313030222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22506F736974696F6E22
+            3E3C706C3A5450726F7065727479204E616D653D2258222056616C75653D2232
+            3438222F3E3C706C3A5450726F7065727479204E616D653D2259222056616C75
+            653D22313434222F3E3C2F706C3A54436C61737350726F70657274793E3C2F70
+            6C3A50726F70657274794C6973743E0D0A}
+        end
+        item
+          Name = 'Move'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Player
+              Animation = 'Move'
+              FPS = 4.000000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D22506C61796572222F3E3C706C3A5450726F7065727479
+            204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F70
+            65727479204E616D653D225374796C654E616D65222056616C75653D22222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D22546F756368223E
+            3C706C3A545265666572656E636550726F7065727479204E616D653D22476573
+            747572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F70
+            65727479204E616D653D22496E74657261637469766547657374757265732220
+            56616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C70
+            6C3A544D6574686F6450726F7065727479204E616D653D224F6E476573747572
+            65222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D
+            225265736F7572636550617468222056616C75653D22433A5C55736572735C44
+            6F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C537475
+            64696F5C50726F6A656B74655C416476656E747572655C57696E33325C52656C
+            656173655C5265736F75726365735C506C61796572222F3E3C706C3A5450726F
+            7065727479204E616D653D22466978656453696465222056616C75653D225769
+            647468222F3E3C706C3A5450726F7065727479204E616D653D224F726967696E
+            616C5769647468222056616C75653D22313133222F3E3C706C3A5450726F7065
+            727479204E616D653D224F726967696E616C486569676874222056616C75653D
+            22323236222F3E3C706C3A5450726F7065727479204E616D653D225769647468
+            222056616C75653D22313239222F3E3C706C3A5450726F7065727479204E616D
+            653D22486569676874222056616C75653D22323236222F3E3C706C3A5450726F
+            7065727479204E616D653D224C656674222056616C75653D22323438222F3E3C
+            706C3A5450726F7065727479204E616D653D22546F70222056616C75653D2231
+            3434222F3E3C706C3A5450726F7065727479204E616D653D2243616E466F6375
+            73222056616C75653D2274727565222F3E3C706C3A5450726F7065727479204E
+            616D653D2254616253746F70222056616C75653D2274727565222F3E3C706C3A
+            54436C61737350726F7065727479204E616D653D2250616464696E67223E3C70
+            6C3A5450726F7065727479204E616D653D224C656674222056616C75653D2230
+            222F3E3C706C3A5450726F7065727479204E616D653D22546F70222056616C75
+            653D2230222F3E3C706C3A5450726F7065727479204E616D653D225269676874
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22426F74746F6D222056616C75653D2230222F3E3C2F706C3A54436C61737350
+            726F70657274793E3C706C3A5450726F7065727479204E616D653D224F706163
+            697479222056616C75653D2231222F3E3C706C3A5450726F7065727479204E61
+            6D653D22526F746174696F6E416E676C65222056616C75653D2230222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22526F746174696F6E43
+            656E746572223E3C706C3A5450726F7065727479204E616D653D225822205661
+            6C75653D22302C35222F3E3C706C3A5450726F7065727479204E616D653D2259
+            222056616C75653D22302C35222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A5450726F7065727479204E616D653D2256697369626C652220
+            56616C75653D2274727565222F3E3C706C3A54436C61737350726F7065727479
+            204E616D653D22416E696D6174696F6E73223E3C706C3A54436C61737350726F
+            7065727479204E616D653D22536176656450726F70657274696573222F3E3C70
+            6C3A5450726F7065727479204E616D653D2253656C6563746564222056616C75
+            653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5443
+            6C61737350726F7065727479204E616D653D224C6F6164466C6F77223E3C706C
+            3A544D6574686F6450726F7065727479204E616D653D224F6E53746172746564
+            222056616C75653D22222F3E3C706C3A544D6574686F6450726F706572747920
+            4E616D653D224F6E53746F70706564222056616C75653D22222F3E3C706C3A54
+            4D6574686F6450726F7065727479204E616D653D224F6E506175736564222056
+            616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D
+            653D224F6E46696E6973686564222056616C75653D22222F3E3C706C3A545072
+            6F7065727479204E616D653D22526570656174222056616C75653D2266616C73
+            65222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F
+            7065727479204E616D653D22416E696D6174696F6E222056616C75653D22222F
+            3E3C706C3A54436C61737350726F7065727479204E616D653D22416E696D6174
+            696F6E536176656450726F70657274696573222F3E3C706C3A5450726F706572
+            7479204E616D653D22546578744F666673657458222056616C75653D2230222F
+            3E3C706C3A5450726F7065727479204E616D653D22546578744F666673657459
+            222056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D
+            22546578745769647468222056616C75653D22323030222F3E3C706C3A545072
+            6F7065727479204E616D653D2243617074696F6E436F6C6F72222056616C7565
+            3D22323535222F3E3C706C3A5450726F7065727479204E616D653D224D6F7665
+            416E696D6174696F6E222056616C75653D22222F3E3C706C3A5450726F706572
+            7479204E616D653D2249646C65416E696D6174696F6E222056616C75653D2222
+            2F3E3C706C3A5450726F7065727479204E616D653D22466163696E6744697265
+            6374696F6E222056616C75653D224C656674222F3E3C706C3A5450726F706572
+            7479204E616D653D2254657874757265446972656374696F6E222056616C7565
+            3D225269676874222F3E3C706C3A5450726F7065727479204E616D653D22594F
+            6666736574506572506963222056616C75653D2235222F3E3C706C3A5450726F
+            7065727479204E616D653D224D6F766553746F70506F73222056616C75653D22
+            30222F3E3C706C3A5450726F7065727479204E616D653D224D696E506F736974
+            696F6E222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D224D6178506F736974696F6E222056616C75653D22313030222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22506F736974696F6E22
+            3E3C706C3A5450726F7065727479204E616D653D2258222056616C75653D2232
+            3438222F3E3C706C3A5450726F7065727479204E616D653D2259222056616C75
+            653D22313434222F3E3C2F706C3A54436C61737350726F70657274793E3C2F70
+            6C3A50726F70657274794C6973743E0D0A}
+        end
+        item
+          Name = 'Hinten'
+          FlowList.ItemClasses = (
+            'TLoadPicFlowItem')
+          FlowList.Items = <
+            item
+              Object = Player
+              Picture = 'HPHinten.png'
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D22506C61796572222F3E3C706C3A5450726F7065727479
+            204E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F70
+            65727479204E616D653D225374796C654E616D65222056616C75653D22222F3E
+            3C706C3A54436C61737350726F7065727479204E616D653D22546F756368223E
+            3C706C3A545265666572656E636550726F7065727479204E616D653D22476573
+            747572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F70
+            65727479204E616D653D22496E74657261637469766547657374757265732220
+            56616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C70
+            6C3A544D6574686F6450726F7065727479204E616D653D224F6E476573747572
+            65222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D
+            225265736F7572636550617468222056616C75653D22433A5C55736572735C44
+            6F6D696E696B5C446F63756D656E74735C456D62617263616465726F5C537475
+            64696F5C50726F6A656B74655C416476656E747572655C57696E33325C52656C
+            656173655C5265736F75726365735C506C61796572222F3E3C706C3A5450726F
+            7065727479204E616D653D22466978656453696465222056616C75653D224865
+            69676874222F3E3C706C3A5450726F7065727479204E616D653D224F72696769
+            6E616C5769647468222056616C75653D2238362C313332363239333934353331
+            33222F3E3C706C3A5450726F7065727479204E616D653D224F726967696E616C
+            486569676874222056616C75653D22313736222F3E3C706C3A5450726F706572
+            7479204E616D653D225769647468222056616C75653D2238362C313332363239
+            33393435333133222F3E3C706C3A5450726F7065727479204E616D653D224865
+            69676874222056616C75653D22313736222F3E3C706C3A5450726F7065727479
+            204E616D653D224C656674222056616C75653D22313433222F3E3C706C3A5450
+            726F7065727479204E616D653D22546F70222056616C75653D22323038222F3E
+            3C706C3A5450726F7065727479204E616D653D2243616E466F63757322205661
+            6C75653D2274727565222F3E3C706C3A5450726F7065727479204E616D653D22
+            54616253746F70222056616C75653D2274727565222F3E3C706C3A54436C6173
+            7350726F7065727479204E616D653D2250616464696E67223E3C706C3A545072
+            6F7065727479204E616D653D224C656674222056616C75653D2230222F3E3C70
+            6C3A5450726F7065727479204E616D653D22546F70222056616C75653D223022
+            2F3E3C706C3A5450726F7065727479204E616D653D225269676874222056616C
+            75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22426F7474
+            6F6D222056616C75653D2230222F3E3C2F706C3A54436C61737350726F706572
+            74793E3C706C3A5450726F7065727479204E616D653D224F7061636974792220
+            56616C75653D2231222F3E3C706C3A5450726F7065727479204E616D653D2252
+            6F746174696F6E416E676C65222056616C75653D2230222F3E3C706C3A54436C
+            61737350726F7065727479204E616D653D22526F746174696F6E43656E746572
+            223E3C706C3A5450726F7065727479204E616D653D2258222056616C75653D22
+            302C35222F3E3C706C3A5450726F7065727479204E616D653D2259222056616C
+            75653D22302C35222F3E3C2F706C3A54436C61737350726F70657274793E3C70
+            6C3A5450726F7065727479204E616D653D2256697369626C65222056616C7565
+            3D2274727565222F3E3C706C3A54436C61737350726F7065727479204E616D65
+            3D22416E696D6174696F6E73223E3C706C3A54436C61737350726F7065727479
+            204E616D653D22536176656450726F70657274696573222F3E3C706C3A545072
+            6F7065727479204E616D653D2253656C6563746564222056616C75653D224964
+            6C65222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A54436C
+            61737350726F7065727479204E616D653D224C6F6164466C6F77223E3C706C3A
+            544D6574686F6450726F7065727479204E616D653D224F6E5374617274656422
+            2056616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E
+            616D653D224F6E53746F70706564222056616C75653D22222F3E3C706C3A544D
+            6574686F6450726F7065727479204E616D653D224F6E50617573656422205661
+            6C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D65
+            3D224F6E46696E6973686564222056616C75653D22222F3E3C706C3A5450726F
+            7065727479204E616D653D22526570656174222056616C75653D2266616C7365
+            222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F70
+            65727479204E616D653D22416E696D6174696F6E222056616C75653D2249646C
+            65222F3E3C706C3A54436C61737350726F7065727479204E616D653D22416E69
+            6D6174696F6E536176656450726F70657274696573222F3E3C706C3A5450726F
+            7065727479204E616D653D22546578744F666673657458222056616C75653D22
+            30222F3E3C706C3A5450726F7065727479204E616D653D22546578744F666673
+            657459222056616C75653D2230222F3E3C706C3A5450726F7065727479204E61
+            6D653D22546578745769647468222056616C75653D22323030222F3E3C706C3A
+            5450726F7065727479204E616D653D2243617074696F6E436F6C6F7222205661
+            6C75653D22323535222F3E3C706C3A5450726F7065727479204E616D653D224D
+            6F7665416E696D6174696F6E222056616C75653D224D6F7665222F3E3C706C3A
+            5450726F7065727479204E616D653D2249646C65416E696D6174696F6E222056
+            616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D22466163
+            696E67446972656374696F6E222056616C75653D224C656674222F3E3C706C3A
+            5450726F7065727479204E616D653D2254657874757265446972656374696F6E
+            222056616C75653D225269676874222F3E3C706C3A5450726F7065727479204E
+            616D653D22594F6666736574506572506963222056616C75653D222D35222F3E
+            3C706C3A5450726F7065727479204E616D653D224D6F766553746F70506F7322
+            2056616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22
+            4D696E506F736974696F6E222056616C75653D2230222F3E3C706C3A5450726F
+            7065727479204E616D653D224D6178506F736974696F6E222056616C75653D22
+            373030222F3E3C706C3A54436C61737350726F7065727479204E616D653D2250
+            6F736974696F6E223E3C706C3A5450726F7065727479204E616D653D22582220
+            56616C75653D22313433222F3E3C706C3A5450726F7065727479204E616D653D
+            2259222056616C75653D22323038222F3E3C2F706C3A54436C61737350726F70
+            657274793E3C2F706C3A50726F70657274794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      MoveAnimation = 'Move'
+      IdleAnimation = 'Idle'
+      TextureDirection = Right
+      YOffsetPerPic = -20.000000000000000000
+      MinPosition = 30.000000000000000000
+      MaxPosition = 660.000000000000000000
+      Position.X = 384.000000000000000000
+      Position.Y = 128.000000000000000000
+      CaptColor = 16711680
+    end
+    object Stuhl1: TForegroundObj
+      FixedSide = Height
+      OriginalWidth = 91.857521057128910000
+      OriginalHeight = 169.000000000000000000
+      Width = 91.857521057128910000
+      Height = 169.000000000000000000
+      Left = 64.000000000000000000
+      Top = 232.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Stuhl1
+          Picture = 'Stuhl halb Schr'#228'g nach Rechts.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Stuhl3: TForegroundObj
+      FixedSide = Height
+      OriginalWidth = 109.250663757324200000
+      OriginalHeight = 201.000000000000000000
+      Width = 109.250663757324200000
+      Height = 201.000000000000000000
+      Left = 550.000000000000000000
+      Top = 320.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Stuhl3
+          Picture = 'Stuhl halb Schr'#228'g nach Rechts.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Tisch2: TForegroundObj
+      OriginalWidth = 377.000000000000000000
+      OriginalHeight = 279.206756591796900000
+      Width = 377.000000000000000000
+      Height = 279.206756591796900000
+      Left = 536.000000000000000000
+      Top = 304.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Tisch2
+          Picture = 'Textur Tisch.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Stuhl2: TForegroundObj
+      FixedSide = Height
+      OriginalWidth = 104.346046447753900000
+      OriginalHeight = 185.000000000000000000
+      Width = 104.346046447753900000
+      Height = 185.000000000000000000
+      Left = 272.000000000000000000
+      Top = 224.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Stuhl2
+          Picture = 'Stuhl Schr'#228'g nach Links.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Tisch1: TForegroundObj
+      OriginalWidth = 313.000000000000000000
+      OriginalHeight = 231.808273315429700000
+      Width = 313.000000000000000000
+      Height = 231.808273315429700000
+      Left = 64.000000000000000000
+      Top = 208.000000000000000000
+      RotationAngle = -3.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Tisch1
+          Picture = 'Textur Tisch.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Light: TForegroundObj
+      OriginalWidth = 25.000000000000000000
+      OriginalHeight = 33.712120056152340000
+      Width = 25.000000000000000000
+      Height = 33.712120056152340000
+      Left = 203.000000000000000000
+      Top = 258.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {3C544F776E656450726F70657274795365742F3E0D0A}
+      Animations.Selected = 'Flackern'
+      Animations = <
+        item
+          Name = 'Flackern'
+          FlowList.Repeat = True
+          FlowList.ItemClasses = (
+            'TAnimationFlowItem')
+          FlowList.Items = <
+            item
+              Object = Light
+              Animation = 'Flackern'
+              FPS = 3.000000000000000000
+            end>
+          StateProperties.PropertyXML = {
+            3C706C3A50726F70657274794C69737420786D6C6E733A706C3D2250726F7065
+            7274794C697374223E3C706C3A5450726F7065727479204E616D653D224E616D
+            65222056616C75653D224C69676874222F3E3C706C3A5450726F706572747920
+            4E616D653D22546167222056616C75653D2230222F3E3C706C3A5450726F7065
+            727479204E616D653D225374796C654E616D65222056616C75653D22222F3E3C
+            706C3A54436C61737350726F7065727479204E616D653D22546F756368223E3C
+            706C3A545265666572656E636550726F7065727479204E616D653D2247657374
+            7572654D616E61676572222056616C75653D22222F3E3C706C3A5450726F7065
+            727479204E616D653D22496E7465726163746976654765737475726573222056
+            616C75653D22222F3E3C2F706C3A54436C61737350726F70657274793E3C706C
+            3A544D6574686F6450726F7065727479204E616D653D224F6E47657374757265
+            222056616C75653D22222F3E3C706C3A5450726F7065727479204E616D653D22
+            5265736F7572636550617468222056616C75653D22433A5C55736572735C446F
+            6D696E696B5C446F63756D656E74735C456D62617263616465726F5C53747564
+            696F5C50726F6A656B74655C416476656E747572655C57696E33325C52656C65
+            6173655C5265736F75726365735C4672616D65735C53616C6F222F3E3C706C3A
+            5450726F7065727479204E616D653D22466978656453696465222056616C7565
+            3D225769647468222F3E3C706C3A5450726F7065727479204E616D653D224F72
+            6967696E616C5769647468222056616C75653D223235222F3E3C706C3A545072
+            6F7065727479204E616D653D224F726967696E616C486569676874222056616C
+            75653D223235222F3E3C706C3A5450726F7065727479204E616D653D22576964
+            7468222056616C75653D223235222F3E3C706C3A5450726F7065727479204E61
+            6D653D22486569676874222056616C75653D223235222F3E3C706C3A5450726F
+            7065727479204E616D653D224C656674222056616C75653D223136222F3E3C70
+            6C3A5450726F7065727479204E616D653D22546F70222056616C75653D223022
+            2F3E3C706C3A5450726F7065727479204E616D653D2243616E466F6375732220
+            56616C75653D2274727565222F3E3C706C3A5450726F7065727479204E616D65
+            3D2254616253746F70222056616C75653D2274727565222F3E3C706C3A54436C
+            61737350726F7065727479204E616D653D2250616464696E67223E3C706C3A54
+            50726F7065727479204E616D653D224C656674222056616C75653D2230222F3E
+            3C706C3A5450726F7065727479204E616D653D22546F70222056616C75653D22
+            30222F3E3C706C3A5450726F7065727479204E616D653D225269676874222056
+            616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D22426F
+            74746F6D222056616C75653D2230222F3E3C2F706C3A54436C61737350726F70
+            657274793E3C706C3A5450726F7065727479204E616D653D224F706163697479
+            222056616C75653D2231222F3E3C706C3A5450726F7065727479204E616D653D
+            22526F746174696F6E416E676C65222056616C75653D2230222F3E3C706C3A54
+            436C61737350726F7065727479204E616D653D22526F746174696F6E43656E74
+            6572223E3C706C3A5450726F7065727479204E616D653D2258222056616C7565
+            3D22302C35222F3E3C706C3A5450726F7065727479204E616D653D2259222056
+            616C75653D22302C35222F3E3C2F706C3A54436C61737350726F70657274793E
+            3C706C3A5450726F7065727479204E616D653D2256697369626C65222056616C
+            75653D2274727565222F3E3C706C3A54436C61737350726F7065727479204E61
+            6D653D22416E696D6174696F6E73223E3C706C3A54436C61737350726F706572
+            7479204E616D653D22536176656450726F70657274696573222F3E3C706C3A54
+            50726F7065727479204E616D653D2253656C6563746564222056616C75653D22
+            222F3E3C2F706C3A54436C61737350726F70657274793E3C706C3A54436C6173
+            7350726F7065727479204E616D653D224C6F6164466C6F77223E3C706C3A544D
+            6574686F6450726F7065727479204E616D653D224F6E53746172746564222056
+            616C75653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D
+            653D224F6E53746F70706564222056616C75653D22222F3E3C706C3A544D6574
+            686F6450726F7065727479204E616D653D224F6E506175736564222056616C75
+            653D22222F3E3C706C3A544D6574686F6450726F7065727479204E616D653D22
+            4F6E46696E6973686564222056616C75653D22222F3E3C706C3A5450726F7065
+            727479204E616D653D22526570656174222056616C75653D2266616C7365222F
+            3E3C2F706C3A54436C61737350726F70657274793E3C706C3A5450726F706572
+            7479204E616D653D22416E696D6174696F6E222056616C75653D22222F3E3C70
+            6C3A54436C61737350726F7065727479204E616D653D22416E696D6174696F6E
+            536176656450726F70657274696573222F3E3C706C3A5450726F706572747920
+            4E616D653D22546578744F666673657458222056616C75653D2230222F3E3C70
+            6C3A5450726F7065727479204E616D653D22546578744F666673657459222056
+            616C75653D2230222F3E3C706C3A5450726F7065727479204E616D653D225465
+            78745769647468222056616C75653D22323030222F3E3C706C3A5450726F7065
+            727479204E616D653D2243617074696F6E436F6C6F72222056616C75653D2232
+            3535222F3E3C2F706C3A50726F70657274794C6973743E0D0A}
+        end>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+    object Candle: TForegroundObj
+      OriginalWidth = 50.000000000000000000
+      OriginalHeight = 91.919189453125000000
+      Width = 50.000000000000000000
+      Height = 91.919189453125000000
+      Left = 192.000000000000000000
+      Top = 248.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = (
+        'TLoadPicFlowItem')
+      LoadFlow.Items = <
+        item
+          Object = Candle
+          Picture = 'Candle.png'
+        end>
+      TextWidth = 200.000000000000000000
+      CaptColor = 255
+    end
+  end
+end

@@ -1,0 +1,207 @@
+inherited PicCloseupFrame: TPicCloseupFrame
+  Height = 431.000000000000000000
+  inherited BGRect: TRectangle
+    Height = 431.000000000000000000
+  end
+  inherited Background: TBackground
+    OriginalWidth = 766.222229003906300000
+    OriginalHeight = 431.000000000000000000
+    Width = 766.222229003906300000
+    Height = 431.000000000000000000
+    BackgroundFile = 
+      '^DC12C7DA13ABABB27E5506089D7D8E3164EC8AA9D7CC8AF941^pimgpsh_full' +
+      'size_distr.png'
+    object Mine: THotspot
+      OriginalWidth = 105.000000000000000000
+      OriginalHeight = 97.000000000000000000
+      Width = 105.000000000000000000
+      Height = 97.000000000000000000
+      Left = 416.000000000000000000
+      Top = 144.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 'Das wird wohl die Mine des Goldgr'#228'bers sein.'
+                end>
+              Person = Player
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+    object GGIndi: THotspot
+      OriginalWidth = 193.000000000000000000
+      OriginalHeight = 225.000000000000000000
+      Width = 193.000000000000000000
+      Height = 225.000000000000000000
+      Left = 184.000000000000000000
+      Top = 112.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem')
+          FlowList.Items = <
+            item
+              OnStarted = IndiFriendshipUnlocked
+              ConvParts = <
+                item
+                  Caption = 
+                    'Das ist ja der Goldgr'#228'ber! Das Bild scheint schon sehr alt zu se' +
+                    'in, aber mann, der sah ja schon damals alt aus. '
+                end
+                item
+                  Caption = 'Also geh'#246'rt ihm die H'#252'tte hier?'
+                end
+                item
+                  Caption = 'Aber warum lebt er dann in der anderen?'
+                end
+                item
+                  Caption = 'Und der Indianer kommt mir auch bekannt vor.'
+                end>
+              Person = Player
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+    object Koordinaten: THotspot
+      OriginalWidth = 193.000000000000000000
+      OriginalHeight = 18.000000000000000000
+      Width = 193.000000000000000000
+      Height = 18.000000000000000000
+      Left = 472.000000000000000000
+      Top = 352.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeStateFlowItem')
+          FlowList.Items = <
+            item
+              OnStarted = KoordinatenTVariadicFlowList0Started
+              ConvParts = <
+                item
+                  Caption = 'Nanu, was ist das denn?'
+                end
+                item
+                  Caption = 'Koordinaten, anscheinend. Die merke ich mir besser mal.'
+                end>
+              Person = Player
+            end
+            item
+              FrameName = 'TMapCloseupFrame'
+              HotspotName = 'MineFrameEntryFound'
+              State = 'Visible'
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      CaptColor = 255
+      object Coords: TText
+        Align = Contents
+        Height = 18.000000000000000000
+        HitTest = False
+        Opacity = 0.200000002980232200
+        Text = ' 53'#176'32'#39'28.77"N  10'#176'11'#39'52.77"E'
+        TextSettings.Font.Family = 'Comic Sans MS'
+        TextSettings.FontColor = claDarkblue
+        Width = 193.000000000000000000
+      end
+    end
+    object Player: TForegroundObj
+      OriginalWidth = 50.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      Left = 352.000000000000000000
+      Top = 72.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 600.000000000000000000
+      CaptColor = 16711680
+    end
+    object Exit1: TExit
+      FixedSide = Height
+      OriginalWidth = 753.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 753.000000000000000000
+      Height = 50.000000000000000000
+      Left = 8.000000000000000000
+      Top = 376.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              Location = 'TRealGGHomeFrame'
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+  end
+end

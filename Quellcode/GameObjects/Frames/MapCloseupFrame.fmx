@@ -1,0 +1,170 @@
+inherited MapCloseupFrame: TMapCloseupFrame
+  Height = 403.000000000000000000
+  TabOrder = 0
+  inherited BGRect: TRectangle
+    Height = 403.000000000000000000
+  end
+  inherited Background: TBackground
+    OriginalWidth = 716.444458007812500000
+    OriginalHeight = 403.000000000000000000
+    Width = 716.444458007812500000
+    Height = 403.000000000000000000
+    BackgroundFile = 'Map Hidden.png'
+    OpenFlowList = <
+      item
+        Name = 'Tutorial'
+        FlowList.ItemClasses = (
+          'TConversationFlowItem'
+          'TLoadLocationFlowItem')
+        FlowList.Items = <
+          item
+            ConvParts = <
+              item
+                AudioFile = 'hp4.mp3'
+                Caption = 
+                  'Na toll, ich k'#246'nnte in fast jedem Dorf auf der Welt sein,  das h' +
+                  'at mir jetzt nicht gerade geholfen. Aber mit etwas Gl'#252'ck  finde ' +
+                  'ich ja einen Bewohner, der mir meine Fragen beantworten kann.'
+              end>
+            Person = Tutorial
+            Dialog = 'Tutorial'
+          end
+          item
+            Location = 'TCityEntryFrame'
+            OpenFlowName = 'MoveTutorial'
+          end>
+      end>
+    object Tutorial: TForegroundObj
+      FixedSide = Height
+      OriginalWidth = 50.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      Left = 312.000000000000000000
+      Top = 56.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 700.000000000000000000
+      CaptColor = 16711680
+    end
+    object Exit1: TExit
+      OriginalWidth = 665.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 665.000000000000000000
+      Height = 50.000000000000000000
+      Left = 48.000000000000000000
+      Top = 352.000000000000000000
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = '#ALLSTATES#'
+          FlowList.ItemClasses = (
+            'TLoadLocationFlowItem')
+          FlowList.Items = <
+            item
+              Location = 'TCityEntryFrame'
+            end>
+        end>
+      States = <>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+    object MineFrameEntryFound: THotspot
+      OriginalWidth = 50.000000000000000000
+      OriginalHeight = 50.000000000000000000
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      Left = 72.000000000000000000
+      Top = 40.000000000000000000
+      Visible = False
+      Animations.SavedProperties.PropertiesXML = {
+        3C544F776E656450726F70657274795365743E3C50726F7065727479204E616D
+        653D225769647468222F3E3C50726F7065727479204E616D653D224865696768
+        74222F3E3C50726F7065727479204E616D653D224C656674222F3E3C50726F70
+        65727479204E616D653D22546F70222F3E3C2F544F776E656450726F70657274
+        795365743E0D0A}
+      Animations = <>
+      LoadFlow.ItemClasses = ()
+      LoadFlow.Items = <>
+      TextWidth = 200.000000000000000000
+      InspectFlows = <>
+      ActionFlows = <
+        item
+          Name = 'Visible'
+          FlowList.ItemClasses = (
+            'TConversationFlowItem'
+            'TChangeStateFlowItem')
+          FlowList.Items = <
+            item
+              ConvParts = <
+                item
+                  Caption = 
+                    'Jaa, hier ungef'#228'hr m'#252'sste der Ort sein, auf den die Koordinaten ' +
+                    'zeigen.'
+                end>
+              Person = Tutorial
+            end
+            item
+              FrameName = 'TFireplaceFrame'
+              HotspotName = 'MineFrameEntry'
+              State = 'Visible'
+            end>
+        end>
+      States.Selected = 'Hidden'
+      States = <
+        item
+          Name = 'Visible'
+          FlowList.ItemClasses = (
+            'TChangePropertyFlowItem'
+            'TChangePropertyFlowItem')
+          FlowList.Items = <
+            item
+              Object = MineFrameEntryFound
+              PropertyName = 'Visible'
+              PropertyValue = 'true'
+            end
+            item
+              Object = Background
+              PropertyName = 'BackgroundFile'
+              PropertyValue = 'Map Visible.png'
+            end>
+        end
+        item
+          Name = 'Hidden'
+          FlowList.ItemClasses = (
+            'TChangePropertyFlowItem'
+            'TChangePropertyFlowItem')
+          FlowList.Items = <
+            item
+              Object = MineFrameEntryFound
+              PropertyName = 'Visible'
+              PropertyValue = 'false'
+            end
+            item
+              Object = Background
+              PropertyName = 'BackgroundFile'
+              PropertyValue = 'Map Hidden.png'
+            end>
+        end>
+      ItemDropEvents = <>
+      CaptColor = 255
+    end
+  end
+end
